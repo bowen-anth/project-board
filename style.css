@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.1rem;
+  min-height: 100vh;
+  min-height: 100lvh;
+  position: relative;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav ul li:hover:before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  background: red;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  left: 3rem;
+}
+
+.nav ul .projects-li:hover:before {
+  left: 3.6rem;
+}
+
+.nav ul .home-li:hover:before {
+  left: 2.7rem;
+}
+
+.nav ul .inbox-li:hover:before {
+  left: 2.6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  padding: 0 1rem;
+}
+
+.nav ul,
+.nav-right-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-right-container {
+  padding: 1rem;
+}
+
+.upgrade-button {
+  height: 2rem;
+  width: 6rem;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.avatar-button {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #db5a80;
+  color: white;
+}
+
+.main-section-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto-fit;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #252531;
+  color: white;
+  padding: 1rem;
+  width: 12rem;
+  height: 40rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  grid-template-columns: 1 / 4;
+}
+
+.projects-side-bar-p,
+.teams {
+  color: #8e8e9a;
+}
+
+.teams {
+  margin-bottom: 1rem;
+  margin-left: 0.25rem;
+}
+
+.project {
+  margin: 1rem 0;
+}
+
+.view-all-link {
+  color: #64c8ea;
+  margin-left: 0.8rem;
+}
+
+.arrow-right {
+  margin-left: 0.25rem;
+}
+
+.teams-text-container {
+  background-color: #3a3c51;
+  height: 13rem;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.need-team-p {
+  margin: 0.5rem 0;
+}
+
+.try-p {
+  margin: 1rem 0;
+}
+
+.try-button {
+  border: none;
+  width: 96%;
+  display: block;
+  margin: auto;
+  height: 2rem;
+  font-size: inherit;
+  border-radius: 8px;
+  margin-top: 0rem;
+  flex-shrink: 0;
+}
+
+.projects-main-p {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  margin: 1rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.7s);
+}
+
+.card.add {
+  color: gray;
+  border: 1px solid gray;
+  padding-top: 4px;
+}
+
+.card.blue {
+  background-color: #58adfe;
+}
+
+.card.red {
+  background-color: #fe8057;
+}
+
+.card.orange {
+  background-color: #ffb657;
+}
+
+.card.purple {
+  background-color: #b358fe;
+}
+
+.main-item-label-p {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0.25rem;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.footer-question-mark {
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+@media (min-width: 680px) {
+  .main {
+    margin-right: auto;
+  }
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+  .nav-right-container {
+    margin-right: auto;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1050px) {
+  .main-section-container {
+    grid-template-columns: 275px 275px;
+  }
+  .main {
+    margin-right: auto;
+    border: 1px solid red;
+    grid-template-columns: 2 / 4;
+  }
+}
